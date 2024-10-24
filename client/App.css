@@ -1,0 +1,72 @@
+#tagline {
+  text-align: center;
+  font-size: 5rem;
+  color: rgb(116, 211, 222);
+  background-color:#242424;
+  padding-top: 17%;
+  Padding-bottom: 25%;
+
+}
+
+#infoContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.infoBox {
+  background-color: rgb(9, 237, 245);
+  width: 500px;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+#body {
+  background-color:#242424;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
