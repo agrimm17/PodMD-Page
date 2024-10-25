@@ -32,13 +32,7 @@ function App() {
         ></iframe>
       </section>
       <section id='installInstructions'><div>Woo!</div></section>
-      <Grid2 container spacing={8}>
-        <BiosCard name="Aaron Jacobs" imgPath="../assets/teamPhotos/aaronJacobs.jpg" gitHubUrl="https://github.com/AaronJacobs" linkedInUrl="https://www.linkedin.com/in/aaronmjacobs/" emailAddress="aaronj313@gmail.com" grid2={Grid2} />
-        <BiosCard name="Alex Grimm" imgPath="../assets/fullLogo.png" gitHubUrl="" linkedInUrl="" emailAddress="" grid2={Grid2} />
-        <BiosCard name="Mason Meyer" imgPath="../assets/fullLogo.png" gitHubUrl="" linkedInUrl="" emailAddress="" grid2={Grid2} />
-        <BiosCard name="RJ McCarthy" imgPath="../assets/fullLogo.png" gitHubUrl="" linkedInUrl="" emailAddress="" grid2={Grid2} />
-        <BiosCard name="Timothy Cheng" imgPath="../assets/fullLogo.png" gitHubUrl="" linkedInUrl="" emailAddress="" grid2={Grid2} />
-      </Grid2>
+      <section><BioContainer/></section>
 
     </div>
   );
