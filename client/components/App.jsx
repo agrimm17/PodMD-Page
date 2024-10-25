@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import Navbar from './Navbar'
 import Info from './Info'
 // import Install from './Install'
@@ -14,6 +14,7 @@ function App() {
       <Navbar />
       <h1 id='tagline'>Optimize your Kubernetes Cluster</h1>
       <div id='infoContainer'><Info text={infoOne} title='Problem/Solution'/><Info text={infoTwo} title="We're Impressive"/></div>
+      <div id="videoEmbed"><iframe width="640" height="360" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=znqw3MZ_6h5a2X9j" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></div>
       {/* <Install /> */}
       {/* <BiosContainer /> */}
     </div>
