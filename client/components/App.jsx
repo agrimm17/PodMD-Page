@@ -21,10 +21,12 @@ function App() {
             height='auto'
             // margin='0.5rem 1.0rem'
           /> */}
-      <h1 id='tagline'>Optimize your Kubernetes Cluster <br /> (Insert Canva Here)</h1>
+      <h1 id='tagline'>
+        Optimize your Kubernetes Cluster <br /> (Insert Canva Here)
+      </h1>
       <section id='PodPulseInfo' className='section'>
         <Info text={infoOne} title='PROBLEM / SOLUTION' />
-        <Info text={infoTwo} title="WHY CARE" />
+        <Info text={infoTwo} title='WHY CARE' />
       </section>
       <section id='videoDemo' className='section'>
         <iframe
@@ -38,9 +40,12 @@ function App() {
           allowFullScreen
         ></iframe>
       </section>
-      <section id='installInstructions'><div>Woo!</div></section>
-      <section><BioContainer/></section>
-
+      <section id='installInstructions' className='section'>
+        <div>Woo!</div>
+      </section>
+      <section id='teamInfo' className='section'>
+        <BioContainer />
+      </section>
     </div>
   );
 }

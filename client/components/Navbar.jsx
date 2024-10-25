@@ -58,7 +58,7 @@ function Navbar() {
             >
               Installation
             </Button>
-            <Button variant='text' sx={{ margin: '15px' }}>
+            <Button href='#teamInfo' variant='text' sx={{ margin: '15px' }}>
               Meet the team
             </Button>
           </Box>
