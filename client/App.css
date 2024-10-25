@@ -1,12 +1,8 @@
 #body {
   background-color:#242424;
-  height: 200em;
+  width: 100%;
   margin: 0px;
   padding: 0px;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 #tagline {
@@ -32,10 +28,9 @@ html {
   font-size: 2rem;
 }
 
-#videoDemo {
+#videoEmbed {
   margin: 10rem 30%;
   text-align: center;
-  scroll-margin-top: 67.64px;
 }
 
 

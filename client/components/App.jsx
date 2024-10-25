@@ -2,7 +2,8 @@
 import Navbar from './Navbar';
 import Info from './Info';
 // import Install from './Install'
-// import BiosContainer from './containers/BiosContainer'
+import BioContainer from './containers/BioContainer';
+
 import '../App.css';
 
 let infoOne =
@@ -31,7 +32,8 @@ function App() {
         ></iframe>
       </section>
       <section id='installInstructions'><div>Woo!</div></section>
-      {/* <BiosContainer /> */}
+      <section><BioContainer/></section>
+
     </div>
   );
 }
