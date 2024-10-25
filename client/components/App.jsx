@@ -1,9 +1,8 @@
 // import React from 'react'
-import Navbar from './Navbar'
-import Info from './Info'
+import Navbar from './Navbar';
+import Info from './Info';
 // import Install from './Install'
-import BiosCard from './containers/BiosCard';
-import { Grid2 } from '@mui/material';
+import BioContainer from './containers/BioContainer';
 
 import '../App.css';
 
@@ -15,16 +14,11 @@ function App() {
     <div id='body'>
       <Navbar />
       <h1 id='tagline'>Optimize your Kubernetes Cluster</h1>
-      <div id='infoContainer'><Info text={infoOne} title='Problem/Solution'/><Info text={infoTwo} title="We're Impressive"/></div>
+      <div id='infoContainer'><Info text={infoOne} title='Problem/Solution' /><Info text={infoTwo} title="We're Impressive" /></div>
       <div id="videoEmbed"><iframe width="640" height="360" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=znqw3MZ_6h5a2X9j" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></div>
       {/* <Install /> */}
-      <Grid2 container spacing={8}>
-        <BiosCard name="Aaron Jacobs" imgPath="../assets/teamPhotos/aaronJacobs.jpg" gitHubUrl="https://github.com/AaronJacobs" linkedInUrl="https://www.linkedin.com/in/aaronmjacobs/" emailAddress="aaronj313@gmail.com" grid2={Grid2} />
-        <BiosCard name="Alex Grimm" imgPath="../assets/fullLogo.png" gitHubUrl="" linkedInUrl="" emailAddress="" grid2={Grid2} />
-        <BiosCard name="Mason Meyer" imgPath="../assets/fullLogo.png" gitHubUrl="" linkedInUrl="" emailAddress="" grid2={Grid2} />
-        <BiosCard name="RJ McCarthy" imgPath="../assets/fullLogo.png" gitHubUrl="" linkedInUrl="" emailAddress="" grid2={Grid2} />
-        <BiosCard name="Timothy Cheng" imgPath="../assets/fullLogo.png" gitHubUrl="" linkedInUrl="" emailAddress="" grid2={Grid2} />
-      </Grid2>
+
+      <section id="teamInfo" style={{paddingBottom: 25}}><BioContainer/></section>
 
     </div>
   );
