@@ -1,17 +1,10 @@
-#body {
-  background-color:#242424;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-}
-
 #tagline {
   text-align: center;
   font-size: 5rem;
   color: rgb(116, 211, 222);
   background-color:#242424;
-  padding-top: 23rem;
-  padding-bottom: 28rem;
+  padding-top: 17%;
+  Padding-bottom: 25%;
 
 }
 
@@ -28,12 +21,12 @@
   font-size: 2rem;
 }
 
-#videoEmbed {
-  margin: 10rem 30%;
-  text-align: center;
+#body {
+  background-color:#242424;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
-
-
 
 /* #root {
   max-width: 1280px;
