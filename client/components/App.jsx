@@ -13,15 +13,22 @@ function App() {
   return (
     <div id='body'>
       <Navbar />
-      <h1 id='tagline'>Optimize your Kubernetes Cluster</h1>
-      <section id='infoContainer'>
-        <Info text={infoOne} title='Problem/Solution' />
-        <Info text={infoTwo} title="We're Impressive" />
+      {/* <img id='tagline'
+            src={logoSlogan}
+            alt='PodPulse - Your DevOps Companion'
+            width='500px'
+            height='auto'
+            // margin='0.5rem 1.0rem'
+          /> */}
+      <h1 id='tagline'>Optimize your Kubernetes Cluster <br /> (Insert Canva Here)</h1>
+      <section id='PodPulseInfo' className='section'>
+        <Info text={infoOne} title='PROBLEM / SOLUTION' />
+        <Info text={infoTwo} title="WHY CARE" />
       </section>
-      <section id='videoDemo'>
+      <section id='videoDemo' className='section'>
         <iframe
-          width='640'
-          height='360'
+          width='800'
+          height='450'
           src='https://www.youtube.com/embed/dQw4w9WgXcQ?si=znqw3MZ_6h5a2X9j'
           title='YouTube video player'
           frameBorder='0'
@@ -30,7 +37,7 @@ function App() {
           allowFullScreen
         ></iframe>
       </section>
-      <section id='installInstructions'><div>Woo!</div></section>
+      <section id='installInstructions' className='section'><div>Woo!</div></section>
       {/* <BiosContainer /> */}
     </div>
   );
