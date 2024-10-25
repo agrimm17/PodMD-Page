@@ -12,7 +12,7 @@ function Navbar() {
       <AppBar>
         <Toolbar
           sx={{
-            backgroundColor: '#242424'
+            backgroundColor: '#242424',
           }}
         >
           <Button>
@@ -37,13 +37,13 @@ function Navbar() {
             // margin='0.5rem 1.0rem'
           />
           <Box sx={{ marginLeft: 'auto', marginRight: 'auto' }}>
-            <Button variant='text' sx={{ margin: '15px' }}>
-              Demo
-            </Button>
-            <Button variant='text' sx={{ margin: '15px' }}>
+              <Button href='#videoDemo' variant='text' sx={{ margin: '15px' }}>
+                Demo
+              </Button>
+            <Button href='#installInstructions' variant='text' sx={{ margin: '15px' }}>
               Installation
             </Button>
-            <Button variant='text' sx={{ margin: '15px' }}>
+            <Button href='#teamInfo' variant='text' sx={{ margin: '15px' }}>
               Meet the team
             </Button>
           </Box>
