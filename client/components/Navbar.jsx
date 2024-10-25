@@ -12,8 +12,7 @@ function Navbar() {
       <AppBar>
         <Toolbar
           sx={{
-            backgroundColor: '#242424',
-            maxHeight: '5px',
+            backgroundColor: '#242424'
           }}
         >
           <Button>
@@ -59,7 +58,7 @@ function Navbar() {
             >
               Installation
             </Button>
-            <Button href='#teamInfo' variant='text' sx={{ margin: '15px' }}>
+            <Button variant='text' sx={{ margin: '15px' }}>
               Meet the team
             </Button>
           </Box>
