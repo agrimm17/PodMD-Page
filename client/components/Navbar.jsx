@@ -29,28 +29,47 @@ function Navbar() {
               }}
             />
           </Button>
+          {console.log(window, innerWidth)}
+          {/* {window.innerWidth > 1550 ? ( */}
           <img
+            id='logoSlogan'
             src={logoSlogan}
             alt='PodPulse - Your DevOps Companion'
             width='500px'
             height='auto'
+            display='none'
             // margin='0.5rem 1.0rem'
           />
-          <Box sx={{ marginLeft: 'auto', marginRight: 'auto' }}>
-            <Button variant='text' sx={{ margin: '15px' }}>
+          {/* ) : (
+            <div></div>
+          )} */}
+
+          <Box id='navButtons' sx={{ marginLeft: 'auto', marginRight: 'auto' }}>
+            <Button href='#PodPulseInfo' variant='text' sx={{ margin: '15px' }}>
+              About PodPulse
+            </Button>
+            <Button href='#videoDemo' variant='text' sx={{ margin: '15px' }}>
               Demo
             </Button>
-            <Button variant='text' sx={{ margin: '15px' }}>
+            <Button
+              href='#installInstructions'
+              variant='text'
+              sx={{ margin: '15px' }}
+            >
               Installation
             </Button>
-            <Button variant='text' sx={{ margin: '15px' }}>
+            <Button href='#teamInfo' variant='text' sx={{ margin: '15px' }}>
               Meet the team
             </Button>
           </Box>
           <ButtonGroup variant='contained' sx={{ marginLeft: 'auto' }}>
-            <Button>Github</Button>
+            <Button href='https://github.com/oslabs-beta/Pod-Pulse'>
+              Github
+            </Button>
             <Button>LinkedIn</Button>
-            <Button>Download</Button>
+            <Button href='https://github.com/oslabs-beta/Pod-Pulse'>
+              Download
+            </Button>
           </ButtonGroup>
         </Toolbar>
       </AppBar>
