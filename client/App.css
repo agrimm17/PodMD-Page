@@ -28,21 +28,25 @@ html {
 #tagline {
   text-align: center;
   font-size: 5rem;
-  color: rgb(116, 211, 222);
-  background-color: #242424;
-  padding-top: 23rem;
+  /* filter: drop-shadow(1rem 1rem 1rem white); */
+  color: rgb(189, 189, 189);
+  /* background-color: #242424; */
+  padding-top: 10rem;
   padding-bottom: 28rem;
+  height: auto;
+  background: linear-gradient(#818181,#242424 70%)
   /* height: 57.82px;
   width: 1000px; */
 }
 
-#PodPulseInfo {
+#PodMDInfo {
   display: flex;
   justify-content: space-around;
+  /* z-index: -10 */
 }
 
 .infoBox {
-  border: 2px solid #686868;;
+  border: 2px solid #686868;
   /* outline-color: grey;
   outline-width: 5px; */
   background-color: #3f3f3f;
@@ -53,9 +57,14 @@ html {
   /* font-size: 2rem; */
 }
 
-#videoDemo {
-  margin: 10rem 30%;
+.infoTitle {
   text-align: center;
+}
+
+#videoDemo {
+  margin-top: 10rem;
+  text-align: center;
+  /* background-color: white */
 }
 
 /* #root {

@@ -5,10 +5,9 @@ function Info({ text, title }) {
   return (
     <CardContent className='infoBox'>
       <Typography sx={{ fontSize: 25 }}>
-        {title}: <br /> {text}
+        <div className='infoTitle'>{title}:</div><br />{text}
       </Typography>
     </CardContent>
-    // <div className='infoBox'>{title}: {text}</div>
   );
 }
 
