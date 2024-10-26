@@ -5,73 +5,95 @@ import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import logoDesign from '../assets/logoDesign.png';
 import logoSlogan from '../assets/logoSlogan.png';
+import { red } from '@mui/material/colors';
+
+const primary = red[500];
+
+let buttonColor = 'grey';
 
 function Navbar() {
   return (
-    <Box position='sticky'>
+    <Box>
       <AppBar>
         <Toolbar
           sx={{
-            backgroundColor: '#242424'
+            backgroundColor: '#242424',
           }}
         >
           <Button>
             <img
               src={logoDesign}
-              alt='PodPulse Logo'
+              alt='PodMD Logo'
               className='logo heartbeat'
               style={{
                 width: '40px',
                 height: 'auto',
                 margin: '0.5rem 1.0rem',
-                transition: 'filter 0.3s',
-                filter: 'grayscale(10%)',
+                // transition: 'filter 0.3s',
+                // filter: 'grayscale(10%)',
               }}
             />
           </Button>
+          {console.log(window, innerWidth)}
           <img
+            id='logoSlogan'
             src={logoSlogan}
-            alt='PodPulse - Your DevOps Companion'
+            alt='PodMD - Your DevOps Companion'
             width='500px'
-            height='auto'
+            height='px'
+            display='none'
             // margin='0.5rem 1.0rem'
           />
-          <Box sx={{ marginLeft: 'auto', marginRight: 'auto' }}>
-            <Button variant='text' sx={{ margin: '15px' }}>
+
+          <Box id='navButtons' sx={{ marginLeft: 'auto', marginRight: 'auto' }}>
+            <Button
+              href='#PodMDInfo'
+              variant='text'
+              sx={{ margin: '15px', color: buttonColor }}
+            >
+              About PODMD
+            </Button>
+            <Button
+              href='#videoDemo'
+              variant='text'
+              sx={{ margin: '15px', color: buttonColor }}
+            >
               Demo
             </Button>
-            <Button variant='text' sx={{ margin: '15px' }}>
+            <Button
+              href='#installInstructions'
+              variant='text'
+              sx={{ margin: '15px', color: buttonColor }}
+            >
               Installation
             </Button>
-            <Button variant='text' sx={{ margin: '15px' }}>
+            <Button
+              href='#teamInfo'
+              variant='text'
+              sx={{ margin: '15px', color: buttonColor }}
+            >
               Meet the team
             </Button>
           </Box>
           <ButtonGroup variant='contained' sx={{ marginLeft: 'auto' }}>
-            <Button>Github</Button>
-            <Button>LinkedIn</Button>
-            <Button>Download</Button>
+            <Button
+              href='https://github.com/oslabs-beta/Pod-Pulse' //sx={{ backgroundColor: buttonColor, color: 'black' }}
+            >
+              Github
+            </Button>
+            <Button //sx={{ backgroundColor: buttonColor, color: 'black' }}
+            >
+              LinkedIn
+            </Button>
+            <Button
+              href='https://github.com/oslabs-beta/Pod-Pulse'
+              //sx={{ backgroundColor: buttonColor, color: 'black' }}
+            >
+              Download
+            </Button>
           </ButtonGroup>
         </Toolbar>
       </AppBar>
-      {/* <style jsx>{`
-        @keyframes pulse {
-          0% {
-            transform: scale(1);
-          }
-          50% {
-            transform: scale(1.1);
-          }
-          100% {
-            transform: scale(1);
-          }
-        }
-
-        .logo:hover {
-          animation: pulse 0.6s infinite;
-          filter: grayscale(0%);
-        }
-      `}</style> */}
     </Box>
   );
 }

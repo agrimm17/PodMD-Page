@@ -1,35 +1,70 @@
 #body {
-  background-color:#242424;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
+  /* background-color: #242424; */
+  height: 200em;
+  /* margin: 0px;
+  padding: 0px; */
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #242424;
+}
+
+@media only screen and (max-width: 1550px) {
+  #logoSlogan {
+      display: none;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  #navButtons {
+      display: none;
+  }
+}
+
+.section {
+  scroll-margin-top: 67.64px;
 }
 
 #tagline {
   text-align: center;
   font-size: 5rem;
-  color: rgb(116, 211, 222);
-  background-color:#242424;
-  padding-top: 23rem;
+  /* filter: drop-shadow(1rem 1rem 1rem white); */
+  color: rgb(189, 189, 189);
+  /* background-color: #242424; */
+  padding-top: 10rem;
   padding-bottom: 28rem;
+  height: auto;
+  background: linear-gradient(#818181,#242424 70%)
+  /* height: 57.82px;
+  width: 1000px; */
 }
 
-#infoContainer {
+#PodMDInfo {
   display: flex;
   justify-content: space-around;
+  /* z-index: -10 */
 }
 
 .infoBox {
-  background-color: rgb(9, 237, 245);
+  border: 2px solid #686868;
+  /* outline-color: grey;
+  outline-width: 5px; */
+  background-color: #3f3f3f;
   width: 500px;
   border-radius: 0.5rem;
-  padding: 2rem;
-  font-size: 2rem;
+  color: white;
+  /* padding: 2rem; */
+  /* font-size: 2rem; */
 }
 
-#videoEmbed {
-  margin: 10rem 30%;
+.infoTitle {
   text-align: center;
+}
+
+#videoDemo {
+  margin-top: 10rem;
+  text-align: center;
+  /* background-color: white */
 }
 
 .gitHubIcon, .linkedInIcon, .bioCardName, .copyButton {
