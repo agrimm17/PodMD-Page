@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import Info from './Info';
 // import Install from './Install'
 import BioContainer from './containers/BioContainer';
+import InstallInstructionsContainer from './containers/InstallContainer'
 
 import '../App.css';
 
@@ -31,8 +32,8 @@ function App() {
           allowFullScreen
         ></iframe>
       </section>
-      <section id='installInstructions'><div>Woo!</div></section>
-      <section><BioContainer/></section>
+      <section id='installInstructions'><div><InstallInstructionsContainer/></div></section>
+      <section id='bioSection'><BioContainer/></section>
 
     </div>
   );
