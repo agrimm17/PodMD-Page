@@ -3,28 +3,34 @@ import Navbar from './Navbar';
 import Info from './Info';
 // import Install from './Install'
 import BioContainer from './containers/BioContainer';
+import logoDesign from '../assets/logoDesign.png';
 
 import '../App.css';
 
 let infoOne =
-  "Current methods available in Kubernetes that control automatic restarts are very limited and non-customizable. We've created a tool that evaluates pod health and can automatically restart a pod based on user's custom parameters.";
+  'When your pods crash, Kubernetes is designed to automatically restart them to maintain cluster health.  But what if your pods aren’t crashing? What if they’re sucking resources because of data leaks or unexpected background processes? Or you simply want to proactively manage your cluster’s resources?';
+
 let infoTwo =
-  'As a software engineer tasked with maintaining our Kubernetes clusters I want to be able to further customize pod restarts to recieve notifcations when a pod is having issues but more importantly NOT receive alerts and have to manually handle an issue when I could have automated it with custom restart parameters beyond the limited default Kubernetes criteria. ';
+  'PodMD allows you to set custom parameters to trigger pod restarts, allowing you to prevent excessive resource consumption BEFORE it becomes a problem, helping to maintain overall cluster health. With dynamic, easy-to-read graphs that display your pod’s metrics across various time periods, you can make informed decisions based on real-time data.';
+
 function App() {
   return (
     <div id='body'>
       <Navbar />
-      {/* <img id='tagline'
-            src={logoSlogan}
-            alt='PodPulse - Your DevOps Companion'
-            width='500px'
-            height='auto'
-            // margin='0.5rem 1.0rem'
-          /> */}
       <h1 id='tagline'>
-        Optimize your Kubernetes Cluster <br /> (Insert Canva Here)
+        <img
+          src={logoDesign}
+          alt='PodMD Logo'
+          style={{
+            width: '300px',
+          }}
+        />
+        <br />
+        Automate your Kubernetes
+        {/* <span className='MD'>M</span>onitoring for <span className='MD'>D</span>
+        evelopers */}
       </h1>
-      <section id='PodPulseInfo' className='section'>
+      <section id='PodMDInfo' className='section'>
         <Info text={infoOne} title='PROBLEM / SOLUTION' />
         <Info text={infoTwo} title='WHY CARE' />
       </section>
