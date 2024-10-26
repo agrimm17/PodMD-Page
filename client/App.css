@@ -67,6 +67,34 @@ html {
   /* background-color: white */
 }
 
+.gitHubIcon, .linkedInIcon, .bioCardName, .copyButton {
+  color: rgb(35,35,35);
+}
+
+.emailIcon {
+  fill: rgb(35,35,35);
+}
+
+.copyButton:hover, .gitHubIcon:hover, .linkedInIcon:hover, .emailIcon:hover {
+  color: grey;
+}
+
+.instructionText {
+  white-space: pre-line;
+}
+
+#accordionBox {
+  margin: 0px 50px 0px 50px;
+}
+
+.installAccordionHeader {
+  color: rgb(0,225,225);
+}
+
+.installAccordionText {
+  color: #242424;
+}
+
 /* #root {
   max-width: 1280px;
   margin: 0 auto;
