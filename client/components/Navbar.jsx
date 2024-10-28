@@ -17,10 +17,10 @@ function Navbar() {
       <AppBar>
         <Toolbar
           sx={{
-            backgroundColor: '#242424',
+            backgroundColor: '#282828',
           }}
         >
-          <Button>
+          <Button href='#tagline'>
             <img
               src={logoDesign}
               alt='PodMD Logo'

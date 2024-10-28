@@ -47,8 +47,8 @@ function App() {
           allowFullScreen
         ></iframe>
       </section>
-      <section id='installInstructions'><div><InstallInstructionsContainer/></div></section>
-      <section id='teamInfo'><BioContainer/></section>
+      <section id='installInstructions' className='section'><div><InstallInstructionsContainer/></div></section>
+      <section id='teamInfo' className='section'><BioContainer/></section>
 
     </div>
   );
