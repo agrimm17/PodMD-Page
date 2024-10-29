@@ -27,14 +27,15 @@ html {
 
 #tagline {
   text-align: center;
-  font-size: 5rem;
-  /* filter: drop-shadow(1rem 1rem 1rem white); */
+  font-size: 4.5rem;
   color: rgb(0, 0, 0);
   /* background-color: #242424; */
-  padding-top: 10rem;
+  padding-top: 8rem;
   padding-bottom: 28rem;
   height: auto;
-  background: linear-gradient(#ffffff, #242424 70%);
+  background: linear-gradient(#d4d4d4, #242424 100%);
+  font-family: 'Aldrich', serif;
+
   /* height: 57.82px;
   width: 1000px; */
 }
@@ -42,7 +43,6 @@ html {
 #PodMDInfo {
   display: flex;
   justify-content: space-around;
-  /* z-index: -10 */
 }
 
 .infoBox {
@@ -79,6 +79,7 @@ html {
 
 .infoTitle {
   text-align: center;
+  font-weight: 700;
 }
 
 #videoDemo {

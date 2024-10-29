@@ -28,9 +28,8 @@ function App() {
           }}
         />
         <br />
-        Automate your Kubernetes
-        {/* <span className='MD'>M</span>onitoring for <span className='MD'>D</span>
-        evelopers */}
+        AUTOMATE YOUR KUBERNETES
+        
       </h1>
       <section id='PodMDInfo' className='section'>
         <Info text={infoOne} title='PROBLEM / SOLUTION' direction='right' />

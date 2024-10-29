@@ -29,7 +29,7 @@ function Info({ text, title, direction }) {
 
   return (
     <CardContent className={`infoBox ${direction}`} ref={cardRef}>
-      <Typography sx={{ fontSize: 25 }}>
+      <Typography sx={{ fontSize: 25, fontFamily: 'Aldrich' }}>
         <div className='infoTitle'>{title}:</div>
         <br />
         {text}
