@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Info from './Info';
+
 // import Install from './Install'
 import BioContainer from './containers/BioContainer';
 import logoDesign from '../assets/logoDesign.png';
@@ -15,6 +16,7 @@ let infoTwo =
   'PodMD allows you to set custom parameters to trigger pod restarts, allowing you to prevent excessive resource consumption BEFORE it becomes a problem, helping to maintain overall cluster health. With dynamic, easy-to-read graphs that display your pod’s metrics across various time periods, you can make informed decisions based on real-time data.';
 
 function App() {
+
   return (
     <div id='body'>
       <Navbar />
@@ -56,7 +58,7 @@ function App() {
         <BioContainer />
       </section>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
