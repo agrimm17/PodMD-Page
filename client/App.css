@@ -12,12 +12,12 @@ html {
 
 @media only screen and (max-width: 1550px) {
   #logoSlogan {
-      display: none;
+    display: none;
   }
 }
 @media only screen and (max-width: 1050px) {
   #navButtons {
-      display: none;
+    display: none;
   }
 }
 
@@ -65,15 +65,21 @@ html {
   text-align: center;
 }
 
-.gitHubIcon, .linkedInIcon, .bioCardName, .copyButton {
-  color: rgb(35,35,35);
+.gitHubIcon,
+.linkedInIcon,
+.bioCardName,
+.copyButton {
+  color: rgb(35, 35, 35);
 }
 
 .emailIcon {
-  fill: rgb(35,35,35);
+  fill: rgb(35, 35, 35);
 }
 
-.copyButton:hover, .gitHubIcon:hover, .linkedInIcon:hover, .emailIcon:hover {
+.copyButton:hover,
+.gitHubIcon:hover,
+.linkedInIcon:hover,
+.emailIcon:hover {
   color: grey;
 }
 
@@ -86,11 +92,34 @@ html {
 }
 
 .installAccordionHeader {
-  color: rgb(0,225,225);
+  color: rgb(0, 225, 225);
 }
 
 .installAccordionText {
   color: #242424;
+}
+
+.heartbeat {
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(0.9);
+  }
+  15% {
+    transform: scale(1.1);
+  }
+  30% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(0.9);
+  }
 }
 
 /* #root {
