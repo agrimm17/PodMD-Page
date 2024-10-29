@@ -3,10 +3,11 @@ import Typography from '@mui/material/Typography';
 
 function Info({ text, title }) {
   return (
-    // <CardContent>
-    //   <Typography sx={{ fontSize: 14 }}>{title}</Typography>
-    // </CardContent>
-    <div className='infoBox'>{title}: {text}</div>
+    <CardContent className='infoBox'>
+      <Typography sx={{ fontSize: 25 }}>
+        <div className='infoTitle'>{title}:</div><br />{text}
+      </Typography>
+    </CardContent>
   );
 }
 
