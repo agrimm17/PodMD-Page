@@ -23,18 +23,20 @@ html {
 
 .section {
   scroll-margin-top: 67.64px;
+  
 }
 
 #tagline {
   text-align: center;
-  font-size: 5rem;
-  /* filter: drop-shadow(1rem 1rem 1rem white); */
+  font-size: 4.5rem;
   color: rgb(0, 0, 0);
   /* background-color: #242424; */
-  padding-top: 10rem;
+  padding-top: 8rem;
   padding-bottom: 28rem;
   height: auto;
-  background: linear-gradient(#ffffff,#242424 70%)
+  background: linear-gradient(#d4d4d4,#242424 100%);
+  font-family: "Aldrich", serif;
+
   /* height: 57.82px;
   width: 1000px; */
 }
@@ -42,29 +44,25 @@ html {
 #PodMDInfo {
   display: flex;
   justify-content: space-around;
-  /* z-index: -10 */
 }
 
 .infoBox {
   border: 2px solid #686868;
-  /* outline-color: grey;
-  outline-width: 5px; */
   background-color: #3f3f3f;
   width: 500px;
   border-radius: 0.5rem;
   color: white;
-  /* padding: 2rem; */
-  /* font-size: 2rem; */
 }
 
 .infoTitle {
   text-align: center;
+  font-weight: 700;
+  
 }
 
 #videoDemo {
   margin-top: 10rem;
   text-align: center;
-  /* background-color: white */
 }
 
 .gitHubIcon, .linkedInIcon, .bioCardName, .copyButton {
