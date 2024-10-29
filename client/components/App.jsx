@@ -1,10 +1,11 @@
-import React from 'react'
-import Navbar from './Navbar'
-import Info from './Info'
+import React from 'react';
+import Navbar from './Navbar';
+import Info from './Info';
+
 // import Install from './Install'
 import BioContainer from './containers/BioContainer';
 import logoDesign from '../assets/logoDesign.png';
-import InstallInstructionsContainer from './containers/InstallContainer'
+import InstallInstructionsContainer from './containers/InstallContainer';
 
 import '../App.css';
 
@@ -48,9 +49,14 @@ function App() {
           allowFullScreen
         ></iframe>
       </section>
-      <section id='installInstructions' className='section'><div><InstallInstructionsContainer/></div></section>
-      <section id='teamInfo' className='section'><BioContainer/></section>
-
+      <section id='installInstructions' className='section'>
+        <div>
+          <InstallInstructionsContainer />
+        </div>
+      </section>
+      <section id='teamInfo' className='section'>
+        <BioContainer />
+      </section>
     </div>
   )
 }
