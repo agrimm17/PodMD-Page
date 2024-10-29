@@ -10,7 +10,8 @@ import { red } from '@mui/material/colors';
 
 const primary = red[500];
 
-let buttonColor = 'grey';
+const logoRedColor = '#ba1c1d';
+const logoWhiteColor = '#e9e9e9';
 
 function Navbar() {
   return (
@@ -21,7 +22,15 @@ function Navbar() {
             backgroundColor: '#282828',
           }}
         >
-          <Button href='#tagline'>
+          <Button
+            href='#tagline'
+            sx={{
+              padding: 0,
+              '&:hover': {
+                backgroundColor: 'transparent',
+              },
+            }}
+          >
             <img
               src={logoDesign}
               alt='PodMD Logo'
@@ -30,8 +39,6 @@ function Navbar() {
                 width: '40px',
                 height: 'auto',
                 margin: '0.5rem 1.0rem',
-                // transition: 'filter 0.3s',
-                // filter: 'grayscale(10%)',
               }}
             />
           </Button>
@@ -46,49 +53,112 @@ function Navbar() {
             // margin='0.5rem 1.0rem'
           />
 
-          <Box id='navButtons' sx={{ marginLeft: 'auto', marginRight: 'auto' }}>
+          <Box
+            id='navButtons'
+            sx={{
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+          >
             <Button
               href='#PodMDInfo'
               variant='text'
-              sx={{ margin: '15px', color: buttonColor }}
+              sx={{
+                margin: '15px',
+                color: logoWhiteColor,
+                '&:hover': {
+                  color: logoRedColor,
+                  backgroundColor: 'transparent',
+                },
+              }}
             >
               About PODMD
             </Button>
             <Button
               href='#videoDemo'
               variant='text'
-              sx={{ margin: '15px', color: buttonColor }}
+              sx={{
+                margin: '15px',
+                color: logoWhiteColor,
+                '&:hover': {
+                  color: logoRedColor,
+                  backgroundColor: 'transparent',
+                },
+              }}
             >
               Demo
             </Button>
             <Button
               href='#installInstructions'
               variant='text'
-              sx={{ margin: '15px', color: buttonColor }}
+              sx={{
+                margin: '15px',
+                color: logoWhiteColor,
+                '&:hover': {
+                  color: logoRedColor,
+                  backgroundColor: 'transparent',
+                },
+              }}
             >
               Installation
             </Button>
             <Button
               href='#teamInfo'
               variant='text'
-              sx={{ margin: '15px', color: buttonColor }}
+              sx={{
+                margin: '15px',
+                color: logoWhiteColor,
+                '&:hover': {
+                  color: logoRedColor,
+                  backgroundColor: 'transparent',
+                },
+              }}
             >
               Meet the team
             </Button>
           </Box>
-          <ButtonGroup variant='contained' sx={{ marginLeft: 'auto' }}>
+          <ButtonGroup
+            variant='contained'
+            sx={{
+              marginLeft: 'auto',
+              '& .MuiButton-root': {
+                borderColor: 'black',
+                borderRadius: '4px',
+                '&:hover': {
+                  backgroundColor: logoRedColor,
+                  color: '#e9e9e9',
+                },
+              },
+            }}
+          >
             <Button
-              href='https://github.com/oslabs-beta/Pod-Pulse' //sx={{ backgroundColor: buttonColor, color: 'black' }}
+              href='https://github.com/oslabs-beta/Pod-Pulse'
+              sx={{
+                backgroundColor: logoWhiteColor,
+                color: 'black',
+                borderRight: '1px solid black',
+                borderRadius: '4px 0 0 4px',
+              }}
             >
               Github
             </Button>
-            <Button //sx={{ backgroundColor: buttonColor, color: 'black' }}
+            <Button
+              sx={{
+                backgroundColor: logoWhiteColor,
+                color: 'black',
+                borderRight: '1px solid black',
+                borderRadius: '0',
+              }}
             >
               LinkedIn
             </Button>
             <Button
               href='https://github.com/oslabs-beta/Pod-Pulse'
-              //sx={{ backgroundColor: buttonColor, color: 'black' }}
+              sx={{
+                backgroundColor: logoWhiteColor,
+                color: 'black',
+                borderRadius: '0 4px 4px 0',
+              }}
             >
               Download
             </Button>
