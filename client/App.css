@@ -47,14 +47,34 @@ html {
 
 .infoBox {
   border: 2px solid #686868;
-  /* outline-color: grey;
-  outline-width: 5px; */
   background-color: #3f3f3f;
   width: 500px;
   border-radius: 0.5rem;
   color: white;
-  /* padding: 2rem; */
-  /* font-size: 2rem; */
+  margin: 20px;
+  transition: transform 0.7s ease, opacity 0.7s ease;
+  opacity: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.infoBox.visible {
+  opacity: 1;
+}
+
+.infoBox.left {
+  transform: translateX(-200%);
+}
+
+.infoBox.right {
+  transform: translateX(200%);
+}
+
+.infoBox.left.visible {
+  transform: translateX(0);
+}
+
+.infoBox.right.visible {
+  transform: translateX(0);
 }
 
 .infoTitle {
@@ -64,7 +84,6 @@ html {
 #videoDemo {
   margin-top: 10rem;
   text-align: center;
-  /* background-color: white */
 }
 
 .gitHubIcon,
@@ -83,6 +102,7 @@ html {
 .linkedInIcon:hover,
 .emailIcon:hover {
   color: grey;
+  cursor: pointer;
 }
 
 .instructionText {

@@ -16,7 +16,6 @@ let infoTwo =
   'PodMD allows you to set custom parameters to trigger pod restarts, allowing you to prevent excessive resource consumption BEFORE it becomes a problem, helping to maintain overall cluster health. With dynamic, easy-to-read graphs that display your pod’s metrics across various time periods, you can make informed decisions based on real-time data.';
 
 function App() {
-
   return (
     <div id='body'>
       <Navbar />
@@ -34,8 +33,8 @@ function App() {
         evelopers */}
       </h1>
       <section id='PodMDInfo' className='section'>
-        <Info text={infoOne} title='PROBLEM / SOLUTION' />
-        <Info text={infoTwo} title='WHY CARE' />
+        <Info text={infoOne} title='PROBLEM / SOLUTION' direction='right' />
+        <Info text={infoTwo} title='WHY CARE' direction='left' />
       </section>
       <section id='videoDemo' className='section'>
         <iframe
@@ -58,7 +57,7 @@ function App() {
         <BioContainer />
       </section>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
