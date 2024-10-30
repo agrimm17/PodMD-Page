@@ -10,6 +10,23 @@ import IntroContainer from './containers/IntroContainer';
 import '../App.css';
 
 function App() {
+
+  useEffect(() => {
+    const resizeOps = () => {
+      document.documentElement.style.setProperty("--vh", `${window.innerHeight * 0.01}px`);
+      console.log('ran func')
+    };
+
+    resizeOps();
+    window.addEventListener("resize", resizeOps);
+    window.addEventListener("orientationchange", resizeOps);
+
+    return () => {
+      window.removeEventListener("resize", resizeOps);
+      window.removeEventListener("orientationchange", resizeOps);
+    };
+  }, []);
+
   return (
     <div id='body'>
       <Navbar />
