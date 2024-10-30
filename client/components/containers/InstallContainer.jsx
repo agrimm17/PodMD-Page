@@ -18,13 +18,21 @@ const InstallInstructionsContainer = () => {
     {
       bullet: [
         'Minikube',
-        'https://minikube.sigs.k8s.io/docs/start/?arch=%2Fmacos%2Farm64%2Fstable%2Fbinary+download',
+        'https://minikube.sigs.k8s.io/docs/start/',
       ],
     },
     { bullet: ['Helm', 'https://v3-1-0.helm.sh/docs/intro/install/'] },
     {
       bullet: ['Kubernetes Kubectl', 'https://kubernetes.io/docs/tasks/tools/'],
     },
+    {
+      bullet: ['Node.js', 'https://nodejs.org/en'],
+    },
+    {
+      instructions:
+        'If you already have a Minikube cluster in docker that is no longer running and you are trying to restart the tool, you must first delete the old cluster by running the following command in your home directory:',
+    },
+    { code: 'minikube delete' },
     {
       instructions:
         'Start your cluster by running the following command in your home directory:',
@@ -46,7 +54,7 @@ const InstallInstructionsContainer = () => {
     },
     {
       instructions:
-        'Run Prometheus cluster on port 9090 by running the following command in your home directory:',
+        'Once Prometheus pods and services are running on your cluster (this can take a few minutes), run Prometheus on https://localhost:9090/ with the following command:',
     },
     {
       code: 'kubectl port-forward prometheus-prometheus-kube-prometheus-prometheus-0 9090',
@@ -56,6 +64,21 @@ const InstallInstructionsContainer = () => {
         'View the Prometheus dashboard by navigating to the following page:',
     },
     { bullet: ['https://localhost:9090/', 'https://localhost:9090/'] },
+    { instructions: 'Clone the PodMD repository from Github:' },
+    {
+      bullet: ['PodMD', 'https://github.com/oslabs-beta/PodMD'],
+    },
+    {
+      instructions:
+        'Install dependencies by running the following command from your new, local repository:',
+    },
+    {
+      code: 'npm install',
+    },
+    {
+      instructions:
+        'Instructions on running the app in browser or on desktop are available in the README.',
+    },
     {
       label:
         'The following are entirely optional and only need to be completed if you wish to access advanced visualizations via Grafana:',
@@ -70,7 +93,7 @@ const InstallInstructionsContainer = () => {
 
   const awsInstructions = [
     { label: 'General install instructions:' },
-    { instructions: 'Ensure that you have installed the following installed:' },
+    { instructions: 'Ensure that you have the following installed:' },
     { bullet: ['AWS Command Line Interface', 'https://aws.amazon.com/cli/'] },
     {
       bullet: [
@@ -82,7 +105,13 @@ const InstallInstructionsContainer = () => {
     {
       bullet: ['Kubernetes Kubectl', 'https://kubernetes.io/docs/tasks/tools/'],
     },
+    {
+      bullet: ['Node.js', 'https://nodejs.org/en'],
+    },
     { instructions: 'Clone the PodMD repository from Github:' },
+    {
+      bullet: ['PodMD', 'https://github.com/oslabs-beta/PodMD'],
+    },
     {
       instructions:
         'Configure AWS by running the following command from your new PodMD directory:',
@@ -124,9 +153,30 @@ const InstallInstructionsContainer = () => {
     },
     {
       instructions:
-        'View the Prometheus dashboard by navigating to the following page:',
+        'After navigating to the following URL, you may enter commands in the Prometheus dashboard if you would like to test its funcitonality. The search bar requires the use of PromQL to gather various metrics. You can read more here:',
     },
     { bullet: ['https://localhost:9090/', 'https://localhost:9090/'] },
+    {
+      instructions:
+        'The Prometheus search bar requires the use of PromQL to gather various metrics. You can read more here:',
+    },
+    {
+      reference: [
+        'PromQL',
+        'https://prometheus.io/docs/prometheus/latest/querying/examples/',
+      ],
+    },
+    {
+      instructions:
+        'Install dependencies by running the following command from your new, local repository:',
+    },
+    {
+      code: 'npm install',
+    },
+    {
+      instructions:
+        'Instructions on running the app in browser or on desktop are available in the README.',
+    },
     {
       label:
         'The following are entirely optional and only need to be completed if you wish to access advanced visualizations via Grafana:',
@@ -248,7 +298,7 @@ const InstallInstructionsContainer = () => {
             id='panel1-header'
           >
             <Typography className='installAccordionText'>
-              If running locally on Minikube:
+              If running locally on Minikube
             </Typography>
           </AccordionSummary>
           <AccordionDetails className='installAccordionBody'>
@@ -263,7 +313,7 @@ const InstallInstructionsContainer = () => {
             id='panel1-header'
           >
             <Typography className='installAccordionText'>
-              If running on AWS:
+              If running on AWS
             </Typography>
           </AccordionSummary>
           <AccordionDetails className='installAccordionBody'>
