@@ -1,8 +1,6 @@
 #body {
   background: linear-gradient(to bottom right, #d4d4d4 0%, #a0a0a0 100%);
   height: 200em;
-  /* margin: 0px;
-  padding: 0px; */
 }
 
 html {
@@ -34,7 +32,7 @@ html {
   font-size: 8rem;
   color: rgb(0, 0, 0);
   padding-top: 14rem;
-  padding-bottom: 9rem;
+  padding-bottom: 11rem;
   font-family: 'Aldrich', serif;
 }
 
@@ -77,8 +75,8 @@ html {
 }
 
 .buttonBox button:hover {
-  transform: translateY(-3px); /* Move up slightly on hover */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 #overview {
@@ -89,70 +87,51 @@ html {
 .section-title {
   font-size: 3rem;
   color: #333;
-  margin-bottom: 1.5rem;
-  font-family: 'Aldrich', serif; /* Use the same font for consistency */
+  padding-bottom: 2rem;
+  font-family: 'Aldrich', serif;
 }
 
 .overview-text {
   font-size: 1.5rem;
   color: #555;
-  line-height: 1.6; /* Better readability */
-  max-width: 800px; /* Limit width for easier reading */
-  margin: 0 auto; /* Center align the text */
-}
-
-.features-list {
-  list-style: none; /* Remove default list styles */
-  padding: 0;
-  margin: 2rem auto; /* Center align the list */
-  max-width: 800px; /* Center alignment */
-}
-
-.feature-item {
-  font-size: 1.5rem;
-  color: #555;
   line-height: 1.6;
-  opacity: 0; /* Start invisible */
-  transform: translateX(100%); /* Start from the right */
-  animation: slide-in 0.5s forwards; /* Apply slide-in animation */
-  margin-bottom: 1.5rem; /* Space between items */
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.infoBox {
-  border: none;
-  background-color: #e9e9e9;
-  width: 500px;
-  border-radius: 0.5rem;
-  color: rgb(63, 63, 63);
-  margin: 20px;
-  transition: transform 0.7s ease, opacity 0.7s ease;
-  opacity: 0;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.infoBox.visible {
-  opacity: 1;
-}
-
-.infoBox.left {
-  transform: translateX(-200%);
-}
-
-.infoBox.right {
-  transform: translateX(200%);
-}
-
-.infoBox.left.visible {
-  transform: translateX(0);
-}
-
-.infoBox.right.visible {
-  transform: translateX(0);
-}
-
-.infoTitle {
+.introCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  font-weight: 700;
+  background-color: #e9e9e9;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 800px;
+}
+
+.imageContainer {
+  filter: grayscale(100%) brightness(0) invert(0.2) sepia(1) hue-rotate(180deg);
+  margin-bottom: 10px;
+}
+
+.textContainer {
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+}
+
+.intro-container {
+  margin: 20px;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 #videoDemo {
