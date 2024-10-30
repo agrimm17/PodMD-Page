@@ -5,9 +5,7 @@ import Info from './Info';
 // import Install from './Install'
 import BioContainer from './containers/BioContainer';
 import InstallInstructionsContainer from './containers/InstallContainer';
-import anxiousFace from '../assets/anxiousFace.png';
-import sliderImage from '../assets/sliders.png';
-import clockImage from '../assets/clock.png';
+import IntroContainer from './containers/IntroContainer';
 
 import '../App.css';
 
@@ -26,13 +24,21 @@ function App() {
         </div>
         <div className='buttonBox'>
           <button
-            onClick={() => (window.location.hash = '#overview')}
+            onClick={() => {
+              document
+                .getElementById('overview')
+                .scrollIntoView({ behavior: 'smooth' });
+            }}
             className='navButton'
           >
             Learn More
           </button>
           <button
-            onClick={() => (window.location.hash = '#installInstructions')}
+            onClick={() => {
+              document
+                .getElementById('installInstructions')
+                .scrollIntoView({ behavior: 'smooth' });
+            }}
             className='navButton'
           >
             Get Started
@@ -41,31 +47,7 @@ function App() {
       </h1>
 
       <section id='overview'>
-        <h2 className='section-title'>Why PodMD?</h2>
-        <div className='overview-text'>
-          <img src={anxiousFace} width='50px'></img>
-          <p>
-            When your pods crash, Kubernetes automatically restarts them. But
-            what happens when your pods are consuming resources due to data
-            leaks or poorly managed processes?
-          </p>
-        </div>
-        <div className='overview-text'>
-          <img src={sliderImage} width='80px'></img>
-          <p>
-            Introducing PodMD, a 100% open-source solution that allows you to
-            set custom parameters for pod restarts, helping you manage resource
-            consumption proactively.
-          </p>
-        </div>
-        <div className='overview-text'>
-          <img src={clockImage} width='50px'></img>
-          <p>
-            With PodMD, you can save valuable time by automating restarts based
-            on defined thresholds, ensuring your applications remain responsive
-            without constant monitoring.
-          </p>
-        </div>
+        <IntroContainer />
       </section>
 
       <section id='videoDemo' className='section'>

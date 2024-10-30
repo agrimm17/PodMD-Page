@@ -224,7 +224,21 @@ const InstallInstructionsContainer = () => {
 
   return (
     <>
-      <Typography variant='h2' className='sectionTitle' sx={{ color: 'rgb(225,225,225)', fontSize: 30, fontWeight: 700, textAlign: 'center', paddingBottom: 2, paddingTop: 15 }}>Instructions</Typography>
+      <Typography
+        variant='h2'
+        className='sectionTitle'
+        sx={{
+          color: '#333',
+          fontSize: 30,
+          fontWeight: 700,
+          textAlign: 'center',
+          paddingBottom: 2,
+          paddingTop: 15,
+          fontFamily: 'Aldrich, serif',
+        }}
+      >
+        Instructions
+      </Typography>
       <Box id='accordionBox'>
         <Accordion className='installAccordion' sx={{ zIndex: 1 }}>
           <AccordionSummary

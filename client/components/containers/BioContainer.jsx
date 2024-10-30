@@ -6,12 +6,13 @@ const BioContainer = () => {
     <>
       <Typography
         sx={{
-          color: 'rgb(240,240,240)',
+          color: '#333',
           fontSize: 30,
           fontWeight: 700,
           textAlign: 'center',
           paddingBottom: 2,
           paddingTop: 5,
+          fontFamily: 'Aldrich, serif',
         }}
       >
         The Team
