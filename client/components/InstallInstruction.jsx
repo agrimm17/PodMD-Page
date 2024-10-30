@@ -8,7 +8,6 @@ export default function InstallInstructions({ instructions, index }) {
   const [showCheck, setShowCheck] = useState(false);
 
   const handleCopyClick = () => {
-    console.log('you clicked');
     navigator.clipboard.writeText(instructions);
     setShowCheck(true);
     setTimeout(() => {

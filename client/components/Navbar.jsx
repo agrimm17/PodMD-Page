@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { GitHub, LinkedIn } from '@mui/icons-material';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -19,7 +20,7 @@ function Navbar() {
       <AppBar>
         <Toolbar
           sx={{
-            backgroundColor: '#282828',
+            backgroundColor: 'rgba(40, 40, 40, 1.0)',
           }}
         >
           <Button
@@ -117,52 +118,48 @@ function Navbar() {
               Meet the team
             </Button>
           </Box>
-          <ButtonGroup
-            variant='contained'
-            sx={{
-              marginLeft: 'auto',
-              '& .MuiButton-root': {
-                borderColor: 'black',
-                borderRadius: '4px',
-                '&:hover': {
-                  backgroundColor: logoRedColor,
-                  color: '#e9e9e9',
-                },
-              },
-            }}
-          >
-            <Button
-              href='https://github.com/oslabs-beta/Pod-Pulse'
+          <Box>
+            <GitHub
+              onClick={() =>
+                window.open(
+                  'https://github.com/oslabs-beta/Pod-Pulse',
+                  '_blank'
+                )
+              }
               sx={{
-                backgroundColor: logoWhiteColor,
-                color: 'black',
-                borderRight: '1px solid black',
+                marginRight: 2,
+                color: 'rgb(240,240,240)',
                 borderRadius: '4px 0 0 4px',
+                height: 35,
+                width: 35,
+                '&:hover': {
+                  cursor: 'pointer',
+                  color: logoRedColor,
+                  backgroundColor: 'transparent',
+                },
               }}
-            >
-              Github
-            </Button>
-            <Button
+            />
+            <LinkedIn
+              onClick={() =>
+                window.open(
+                  'https://www.linkedin.com/company/pod-md/',
+                  '_blank'
+                )
+              }
               sx={{
-                backgroundColor: logoWhiteColor,
-                color: 'black',
-                borderRight: '1px solid black',
-                borderRadius: '0',
+                marginRight: 2,
+                color: 'rgb(240,240,240)',
+                borderRadius: '4px 0 0 4px',
+                height: 35,
+                width: 35,
+                '&:hover': {
+                  cursor: 'pointer',
+                  color: logoRedColor,
+                  backgroundColor: 'transparent',
+                },
               }}
-            >
-              LinkedIn
-            </Button>
-            <Button
-              href='https://github.com/oslabs-beta/Pod-Pulse'
-              sx={{
-                backgroundColor: logoWhiteColor,
-                color: 'black',
-                borderRadius: '0 4px 4px 0',
-              }}
-            >
-              Download
-            </Button>
-          </ButtonGroup>
+            />
+          </Box>
         </Toolbar>
       </AppBar>
     </Box>

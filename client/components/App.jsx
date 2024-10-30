@@ -1,40 +1,73 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './Navbar';
 import Info from './Info';
 
 // import Install from './Install'
 import BioContainer from './containers/BioContainer';
-import logoDesign from '../assets/logoDesign.png';
 import InstallInstructionsContainer from './containers/InstallContainer';
+import anxiousFace from '../assets/anxiousFace.png';
+import sliderImage from '../assets/sliders.png';
+import clockImage from '../assets/clock.png';
 
 import '../App.css';
-
-let infoOne =
-  'When your pods crash, Kubernetes is designed to automatically restart them to maintain cluster health.  But what if your pods aren’t crashing? What if they’re sucking resources because of data leaks or unexpected background processes? Or you simply want to proactively manage your cluster’s resources?';
-
-let infoTwo =
-  'PodMD allows you to set custom parameters to trigger pod restarts, allowing you to prevent excessive resource consumption BEFORE it becomes a problem, helping to maintain overall cluster health. With dynamic, easy-to-read graphs that display your pod’s metrics across various time periods, you can make informed decisions based on real-time data.';
 
 function App() {
   return (
     <div id='body'>
       <Navbar />
       <h1 id='tagline'>
-        <img
-          src={logoDesign}
-          alt='PodMD Logo'
-          style={{
-            width: '300px',
-          }}
-        />
-        <br />
-        AUTOMATE YOUR KUBERNETES
-        
+        <div className='taglineText'>
+          Transform your Kubernetes Management With
+          <span id='pod'>Pod</span>
+          <span id='md'>MD</span>
+        </div>
+        <div className='subText'>
+          Custom pod restart configurations for smarter resource management.
+        </div>
+        <div className='buttonBox'>
+          <button
+            onClick={() => (window.location.hash = '#overview')}
+            className='navButton'
+          >
+            Learn More
+          </button>
+          <button
+            onClick={() => (window.location.hash = '#installInstructions')}
+            className='navButton'
+          >
+            Get Started
+          </button>
+        </div>
       </h1>
-      <section id='PodMDInfo' className='section'>
-        <Info text={infoOne} title='PROBLEM / SOLUTION' direction='right' />
-        <Info text={infoTwo} title='WHY CARE' direction='left' />
+
+      <section id='overview'>
+        <h2 className='section-title'>Why PodMD?</h2>
+        <div className='overview-text'>
+          <img src={anxiousFace} width='50px'></img>
+          <p>
+            When your pods crash, Kubernetes automatically restarts them. But
+            what happens when your pods are consuming resources due to data
+            leaks or poorly managed processes?
+          </p>
+        </div>
+        <div className='overview-text'>
+          <img src={sliderImage} width='80px'></img>
+          <p>
+            Introducing PodMD, a 100% open-source solution that allows you to
+            set custom parameters for pod restarts, helping you manage resource
+            consumption proactively.
+          </p>
+        </div>
+        <div className='overview-text'>
+          <img src={clockImage} width='50px'></img>
+          <p>
+            With PodMD, you can save valuable time by automating restarts based
+            on defined thresholds, ensuring your applications remain responsive
+            without constant monitoring.
+          </p>
+        </div>
       </section>
+
       <section id='videoDemo' className='section'>
         <iframe
           width='800'
