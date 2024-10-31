@@ -37,6 +37,7 @@ function Navbar() {
           <Button
             href='#tagline'
             sx={{
+              scrollBehavior: 'smooth',
               padding: 0,
               '&:hover': {
                 backgroundColor: 'transparent',
@@ -73,9 +74,10 @@ function Navbar() {
             }}
           >
             <Button
-              href='#PodMDInfo'
+              href='#overview'
               variant='text'
               sx={{
+                scrollBehavior: 'smooth',
                 margin: '15px',
                 color: logoWhiteColor,
                 '&:hover': {
@@ -90,6 +92,7 @@ function Navbar() {
               href='#videoDemo'
               variant='text'
               sx={{
+                scrollBehavior: 'smooth',
                 margin: '15px',
                 color: logoWhiteColor,
                 '&:hover': {
@@ -104,6 +107,7 @@ function Navbar() {
               href='#installInstructions'
               variant='text'
               sx={{
+                scrollBehavior: 'smooth',
                 margin: '15px',
                 color: logoWhiteColor,
                 '&:hover': {
@@ -118,6 +122,7 @@ function Navbar() {
               href='#teamInfo'
               variant='text'
               sx={{
+                scrollBehavior: 'smooth',
                 margin: '15px',
                 color: logoWhiteColor,
                 '&:hover': {

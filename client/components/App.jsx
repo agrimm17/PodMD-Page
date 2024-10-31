@@ -32,10 +32,10 @@ function App() {
       <section id='overview'>
         <IntroContainer />
       </section>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <section id='videoDemo' className='section'>
+      <div style={{ height: '500px', width: 'auto', display: 'flex', justifyContent: 'center' }}>
+      <section id='videoDemo' className='section' style={{ height: '100%', width: '100%', marginLeft: '20px', marginRight: '20px' }}>
         <iframe
-          style={{ width: '50rem', height: '20rem' }}
+          style={{ width: '100%', height: '100%' }}
           src='https://www.youtube.com/embed/U9UMWqnvxTA?si=R_CeAa0XLHiFnyj5'
           title='YouTube video player'
           frameBorder='0'
