@@ -1,10 +1,9 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
 import { GitHub, LinkedIn } from '@mui/icons-material';
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
+import { Fade, Box } from '@mui/material';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
-import ButtonGroup from '@mui/material/ButtonGroup';
 import logoDesign from '../assets/logoDesign.png';
 import logoSlogan from '../assets/logoSlogan.png';
 import { red } from '@mui/material/colors';
@@ -15,17 +14,30 @@ const logoRedColor = '#ba1c1d';
 const logoWhiteColor = '#e9e9e9';
 
 function Navbar() {
+
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const handleLoad = () => setLoaded(true);
+    handleLoad();
+  }, []);
+
   return (
+    
     <Box>
+      <Fade in={loaded} timeout={1000}>
       <AppBar>
         <Toolbar
           sx={{
+            display: 'flex',
+            justifyContent: 'space-between',
             backgroundColor: 'rgba(40, 40, 40, 1.0)',
           }}
         >
           <Button
             href='#tagline'
             sx={{
+              scrollBehavior: 'smooth',
               padding: 0,
               '&:hover': {
                 backgroundColor: 'transparent',
@@ -62,9 +74,10 @@ function Navbar() {
             }}
           >
             <Button
-              href='#PodMDInfo'
+              href='#overview'
               variant='text'
               sx={{
+                scrollBehavior: 'smooth',
                 margin: '15px',
                 color: logoWhiteColor,
                 '&:hover': {
@@ -79,6 +92,7 @@ function Navbar() {
               href='#videoDemo'
               variant='text'
               sx={{
+                scrollBehavior: 'smooth',
                 margin: '15px',
                 color: logoWhiteColor,
                 '&:hover': {
@@ -93,6 +107,7 @@ function Navbar() {
               href='#installInstructions'
               variant='text'
               sx={{
+                scrollBehavior: 'smooth',
                 margin: '15px',
                 color: logoWhiteColor,
                 '&:hover': {
@@ -107,6 +122,7 @@ function Navbar() {
               href='#teamInfo'
               variant='text'
               sx={{
+                scrollBehavior: 'smooth',
                 margin: '15px',
                 color: logoWhiteColor,
                 '&:hover': {
@@ -162,6 +178,7 @@ function Navbar() {
           </Box>
         </Toolbar>
       </AppBar>
+    </Fade>
     </Box>
   );
 }
