@@ -46,7 +46,7 @@ function Navbar() {
               alt='PodMD Logo'
               className='logo heartbeat'
               style={{
-                width: '40px',
+                width: '65px',
                 height: 'auto',
                 margin: '0.5rem 1.0rem',
               }}
@@ -57,8 +57,12 @@ function Navbar() {
             id='logoSlogan'
             src={logoSlogan}
             alt='PodMD - Your DevOps Companion'
-            width='500px'
-            height='px'
+            style={{
+              marginBottom: 'none',
+              marginTop: '17px'
+            }}
+            width='auto'
+            height='30px'
             display='none'
             // margin='0.5rem 1.0rem'
           />
@@ -78,8 +82,8 @@ function Navbar() {
                 margin: '15px',
                 color: logoWhiteColor,
                 '&:hover': {
-                  color: logoBlue,
-                  backgroundColor: 'transparent',
+                  color: logoWhiteColor,
+                  backgroundColor: '#003399',
                 },
               }}
             >
@@ -93,8 +97,8 @@ function Navbar() {
                 margin: '15px',
                 color: logoWhiteColor,
                 '&:hover': {
-                  color: logoBlue,
-                  backgroundColor: 'transparent',
+                  color: logoWhiteColor,
+                  backgroundColor: '#003399',
                 },
               }}
             >
@@ -108,8 +112,8 @@ function Navbar() {
                 margin: '15px',
                 color: logoWhiteColor,
                 '&:hover': {
-                  color: logoBlue,
-                  backgroundColor: 'transparent',
+                  color: logoWhiteColor,
+                  backgroundColor: '#003399',
                 },
               }}
             >
@@ -123,8 +127,8 @@ function Navbar() {
                 margin: '15px',
                 color: logoWhiteColor,
                 '&:hover': {
-                  color: logoBlue,
-                  backgroundColor: 'transparent',
+                  color: logoWhiteColor,
+                  backgroundColor: '#003399',
                 },
               }}
             >
