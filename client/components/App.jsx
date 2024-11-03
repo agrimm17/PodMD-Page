@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import FadeTagline from './FadeTagline';
 import BioContainer from './containers/BioContainer';
