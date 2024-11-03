@@ -1,17 +1,12 @@
-import * as React from 'react';
 import { GitHub, LinkedIn } from '@mui/icons-material';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
-import ButtonGroup from '@mui/material/ButtonGroup';
 import logoDesign from '../assets/logoDesign.png';
 import logoSlogan from '../assets/logoSlogan.png';
-import { red } from '@mui/material/colors';
 
-const primary = red[500];
-
-const logoRedColor = '#ba1c1d';
+const logoBlue = '#003399';
 const logoWhiteColor = '#e9e9e9';
 
 function Navbar() {
@@ -68,7 +63,7 @@ function Navbar() {
                 margin: '15px',
                 color: logoWhiteColor,
                 '&:hover': {
-                  color: logoRedColor,
+                  color: logoBlue,
                   backgroundColor: 'transparent',
                 },
               }}
@@ -82,7 +77,7 @@ function Navbar() {
                 margin: '15px',
                 color: logoWhiteColor,
                 '&:hover': {
-                  color: logoRedColor,
+                  color: logoBlue,
                   backgroundColor: 'transparent',
                 },
               }}
@@ -96,7 +91,7 @@ function Navbar() {
                 margin: '15px',
                 color: logoWhiteColor,
                 '&:hover': {
-                  color: logoRedColor,
+                  color: logoBlue,
                   backgroundColor: 'transparent',
                 },
               }}
@@ -110,7 +105,7 @@ function Navbar() {
                 margin: '15px',
                 color: logoWhiteColor,
                 '&:hover': {
-                  color: logoRedColor,
+                  color: logoBlue,
                   backgroundColor: 'transparent',
                 },
               }}
@@ -134,7 +129,7 @@ function Navbar() {
                 width: 35,
                 '&:hover': {
                   cursor: 'pointer',
-                  color: logoRedColor,
+                  color: logoBlue,
                   backgroundColor: 'transparent',
                 },
               }}
@@ -154,7 +149,7 @@ function Navbar() {
                 width: 35,
                 '&:hover': {
                   cursor: 'pointer',
-                  color: logoRedColor,
+                  color: logoBlue,
                   backgroundColor: 'transparent',
                 },
               }}

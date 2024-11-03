@@ -53,7 +53,7 @@ html {
 }
 
 #md {
-  color: #ba1c1d;
+  color: #003399;
 }
 
 .buttonBox {
@@ -154,7 +154,7 @@ html {
 .gitHubIcon:hover,
 .linkedInIcon:hover,
 .emailIcon:hover {
-  color: #ba1c1d;
+  color: #003399;
   cursor: pointer;
 }
 

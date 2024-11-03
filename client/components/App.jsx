@@ -1,8 +1,5 @@
-import React, { useEffect } from 'react';
 import Navbar from './Navbar';
-import Info from './Info';
 
-// import Install from './Install'
 import BioContainer from './containers/BioContainer';
 import InstallInstructionsContainer from './containers/InstallContainer';
 import IntroContainer from './containers/IntroContainer';
